@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smarter Converter</h1>
+    
+        <!-- Dropdown for selecting 'From' unit -->
+        <label for="fromUnit">Convert from:</label>
+        <select id="fromUnit" name="fromUnit">
+            <option value="km">Kilometers</option>
+            <option value="miles">Miles</option>
+        </select>
+    
+        <!-- Dropdown for selecting 'To' unit -->
+        <label for="toUnit">Convert to:</label>
+        <select id="toUnit" name="toUnit">
+            <option value="km">Kilometers</option>
+            <option value="miles">Miles</option>
+        </select>
+    
+        <!-- Input for the value to convert -->
+        <br><br>
+        <label for="value">Enter value:</label>
+        <input type="number" id="value" name="value" placeholder="Enter value here">
+    
+        <!-- Button to trigger conversion -->
+        <br><br>
+        <button id="convertButton" onclick="convert()">Convert</button>
+
+        <!-- Placeholder for the result -->
+        <p id="result"></p>
+    </div>
+
+    <!-- History paragraph below the converter -->
+    <div class="history">
+        <h2>The History of Kilometers and Miles</h2>
+        <p>
+            The kilometer is a unit of length in the metric system, equivalent to one thousand meters. It was introduced during the French Revolution when the metric system was first established in 1799. The mile, on the other hand, is a unit of length used in the imperial system, commonly used in the United States and the United Kingdom. It originates from the Roman mille passus, which was equivalent to 5,000 Roman feet. 
+        </p>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

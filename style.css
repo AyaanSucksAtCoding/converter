@@ -1,0 +1,69 @@
+/* Apply Flexbox to center everything in the body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed from height: 100vh to min-height: 100vh */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Optional: light background color */
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width to keep it centered and neat */
+    margin-bottom: 20px; /* Space between the container and the history section */
+}
+
+/* Styling for the input elements */
+select, input[type="number"] {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling the Convert button */
+#convertButton {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+#convertButton:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* History section styling */
+.history {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history h2 {
+    margin-top: 0;
+}
+
+.history p {
+    font-size: 16px;
+    line-height: 1.6;
+}
